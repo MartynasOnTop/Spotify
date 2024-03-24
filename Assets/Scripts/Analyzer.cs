@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Analyzer : MonoBehaviour
 {
     AudioSource source;
-    public UnityEvent<float> onVolumeChanged;
+    public static UnityEvent<float> onVolumeChanged = new();
 
     private void Start()
     {
